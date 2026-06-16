@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<script>try{if(sessionStorage.getItem('vd-unlocked')==='1')document.documentElement.classList.add('vd-unlocked');}catch(e){}</script>
+<script src="gate.js" defer></script>
+<title>Demos | Videra Front Door</title>
+<meta name="description" content="Try Front Door live or book a guided demo. Pick a scenario and watch the AI engage, qualify, schedule, and run clinical intake.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.scn{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.scn button{background:#fff;border:1px solid var(--border);border-radius:999px;padding:9px 16px;font-size:14px;
+  font-weight:600;color:var(--navy);cursor:pointer;font-family:inherit;transition:.15s}
+.scn button:hover{border-color:var(--navy-2)}
+.scn button.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.demowrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+@media(max-width:860px){.demowrap{grid-template-columns:1fr}}
+.chatfeed{min-height:340px}
+.replay{margin-top:16px}
+.form .row{display:flex;gap:14px}
+.form .row>div{flex:1}
+.form label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin:14px 0 6px}
+.form input,.form select{width:100%;padding:11px 13px;border:1px solid var(--border);border-radius:var(--radius);
+  font-family:inherit;font-size:14px;color:var(--ink)}
+.form input:focus,.form select:focus{outline:none;border-color:var(--navy-2)}
+.note{background:#fff7f2;border:1px solid #f3d3c2;color:#8a4520;border-radius:var(--radius);padding:12px 14px;font-size:13px;margin-top:16px}
+.launch{background:linear-gradient(135deg,#0a1f33,#10325a);border:1px solid rgba(255,255,255,.10);border-radius:var(--radius-lg);
+  padding:64px 32px;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.launch::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(127,209,168,.12),transparent 60%)}
+.launch-inner{max-width:640px;margin:0 auto;position:relative}
+.lw-eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#7fd1a8;margin-bottom:18px}
+.lw-title{color:#fff;font-size:33px;line-height:1.2;margin-bottom:14px}
+.lw-sub{color:#b9c6d6;font-size:16.5px;margin-bottom:30px}
+.lw-meta{display:flex;gap:22px;justify-content:center;margin-bottom:30px;flex-wrap:wrap}
+.lw-meta span{color:#9fb4ce;font-size:13px;font-weight:600;display:flex;align-items:center;gap:7px}
+.lw-meta span::before{content:"";width:7px;height:7px;border-radius:50%;background:#7fd1a8;display:inline-block}
+.lw-note{display:block;margin-top:14px;font-size:12.5px;color:#7d93ad}
+</style>
+</head>
+<body>
+
+<div id="vd-gate" role="dialog" aria-label="Private page">
+  <div class="vd-gate-inner">
+    <div class="vd-lock" aria-hidden="true">&#128274;</div>
+    <div class="vd-gate-logo" id="vd-unlock" title="Videra"><span class="mark">V</span> Videra</div>
+    <p class="vd-gate-title">This page is private</p>
+    <p class="vd-gate-sub">This area is under construction and not yet available.</p>
+  </div>
+</div>
+
+<div class="trustbar">
+  <strong>HIPAA Compliant</strong><span class="dot">·</span><strong>SOC 2 Type II</strong><span class="dot">·</span><strong>FDA Registered</strong><span class="dot">·</span>2026 Best Overall Patient Engagement Platform
+</div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="index.html"><span class="mark">V</span> Videra</a>
+    <nav class="navlinks">
+      <span class="has-menu">Product ▾
+        <div class="menu">
+          <a href="virtual-assistant.html"><span class="ic">◈</span><span><span class="mt">Virtual Assistant</span><span class="md">24/7 engagement, qualification & scheduling</span></span></a>
+          <a href="clinical-intake.html"><span class="ic">✚</span><span><span class="mt">Clinical Intake Automation</span><span class="md">Assessments, history & documents before visit 1</span></span></a>
+        </div>
+      </span>
+      <a href="pricing.html">Pricing</a>
+      <a href="demo.html">Demos</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta"><a class="btn btn-primary" href="#book">Book a Demo</a></div>
+  </div>
+</header>
+
+<section class="pagehead">
+  <div class="wrap" style="text-align:center">
+    <div class="breadcrumb" style="text-align:center"><a href="index.html">Front Door</a> &nbsp;/&nbsp; Demos</div>
+    <span class="eyebrow" style="color:#ffd9c2">Try it</span>
+    <h1>See Front Door in action.</h1>
+    <p style="margin:14px auto 0">Pick a scenario and watch the AI handle it — no demo call required. Or book a guided walkthrough with our team.</p>
+  </div>
+</section>
+
+<!-- TRY IT -->
+<section class="section" id="try">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:30px"><span class="eyebrow">Interactive walkthrough</span><h2>Watch a call become a complete client record.</h2></div>
+
+    <div class="launch">
+      <div class="launch-inner">
+        <span class="lw-eyebrow">Front Door · Interactive walkthrough</span>
+        <h3 class="lw-title">A phone call becomes a complete client record.</h3>
+        <p class="lw-sub">Step through how Front Door's voice agent captures a caller's intake and hands a fully-structured client record off to your EHR — with no human data entry in between.</p>
+        <div class="lw-meta"><span>13 guided steps</span><span>~2 minutes</span><span>Autoplay or self-paced</span></div>
+        <a class="btn btn-primary btn-lg" href="https://viderahealth.com/demo-frontdoor.html" target="_blank" rel="noopener">▶ &nbsp;Launch the live walkthrough →</a>
+        <span class="lw-note">Opens the interactive demo in a new tab</span>
+      </div>
+    </div>
+
+    <div class="center" style="margin:58px 0 26px"><span class="eyebrow">Quick previews</span><h2>Or watch a scenario play out here.</h2></div>
+    <div class="demowrap">
+      <div>
+        <div class="scn" id="scn">
+          <button data-k="intake" class="active">New patient inquiry</button>
+          <button data-k="afterhours">After-hours reach-out</button>
+          <button data-k="insurance">Insurance &amp; scheduling</button>
+          <button data-k="clinical">Clinical intake (PHQ-9)</button>
+        </div>
+        <div class="mock">
+          <div class="bar" id="barlabel">Front Door · Live conversation <span class="live">Online</span></div>
+          <div class="body chatfeed" id="feed"></div>
+        </div>
+        <div class="replay"><button class="btn btn-outline" id="replay">↻ Replay scenario</button></div>
+      </div>
+      <div>
+        <h3 style="font-size:24px;margin-bottom:12px">What you're seeing</h3>
+        <p class="muted" id="scn-desc" style="font-size:16px">A patient reaches out for the first time. The Virtual Assistant qualifies them with empathy and books an appointment — then queues clinical intake automatically.</p>
+        <div class="note">This is a scripted preview for illustration. In a live environment, Front Door runs on your intake logic, your programs, and your EHR.</div>
+        <div style="margin-top:26px"><a class="btn btn-primary btn-lg" href="#book">Book a guided demo →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="section bg-soft" id="book">
+  <div class="wrap">
+    <div class="demowrap">
+      <div>
+        <span class="eyebrow">Book a demo</span>
+        <h2>See it against your real call patterns.</h2>
+        <p class="lead" style="margin-top:16px">Thirty minutes. We'll walk through Front Door on your actual intake scenarios and leave you with a written pricing estimate.</p>
+        <ul class="engine va" style="border:none;padding:0;box-shadow:none;background:transparent;list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px">
+          <li style="display:flex;gap:10px;color:var(--ink)"><span style="color:var(--orange);font-weight:800">✓</span> A live look at engagement + clinical intake</li>
+          <li style="display:flex;gap:10px;color:var(--ink)"><span style="color:var(--orange);font-weight:800">✓</span> EHR integration walkthrough</li>
+          <li style="display:flex;gap:10px;color:var(--ink)"><span style="color:var(--orange);font-weight:800">✓</span> A written estimate for your organization</li>
+        </ul>
+      </div>
+      <div class="card">
+        <form class="form" id="demoform" onsubmit="return bookSubmit(event)">
+          <div class="row"><div><label>First name</label><input required></div><div><label>Last name</label><input required></div></div>
+          <label>Work email</label><input type="email" required>
+          <label>Organization</label><input required>
+          <div class="row">
+            <div><label>Role</label><select><option>Admissions / Intake</option><option>Clinical Director</option><option>Operations</option><option>Executive</option><option>Other</option></select></div>
+            <div><label>Monthly inquiries</label><select><option>Under 250</option><option>250–1,000</option><option>1,000–5,000</option><option>5,000+</option></select></div>
+          </div>
+          <button class="btn btn-primary btn-lg" style="width:100%;justify-content:center;margin-top:22px" type="submit">Request my demo</button>
+          <p class="muted" style="font-size:12.5px;margin-top:12px;text-align:center">We'll never share your information. BAA available before any PHI is exchanged.</p>
+        </form>
+        <div id="thanks" style="display:none;text-align:center;padding:30px 10px">
+          <div style="font-size:42px">✓</div>
+          <h3 style="margin:10px 0">Thanks — we'll be in touch.</h3>
+          <p class="muted">A Videra specialist will reach out within one business day to schedule your walkthrough.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="logo"><span class="mark">V</span> Videra</div>
+        <p class="blurb">The AI platform for behavioral health. One model that understands mental health — deployed across engagement, intake, assessment, documentation, and research.</p>
+        <div class="badges"><span>HIPAA</span><span>SOC 2 Type II</span><span>FDA Registered</span></div>
+      </div>
+      <div><h5>Product</h5><ul><li><a href="virtual-assistant.html">Virtual Assistant</a></li><li><a href="clinical-intake.html">Clinical Intake</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="demo.html">Demos</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Ethical AI</a></li><li><a href="#">Science</a></li><li><a href="#">Case Studies</a></li></ul></div>
+      <div><h5>Resources</h5><ul><li><a href="#">Blog</a></li><li><a href="#">Help</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="#">Contact</a></li></ul></div>
+    </div>
+    <div class="bottom"><span>© 2026 Videra Health, Inc.</span><span>Privacy Policy · Terms of Use · Security</span></div>
+  </div>
+</footer>
+
+<script>
+const SCN={
+  intake:{label:"Front Door · Web chat",desc:"A patient reaches out for the first time. The Virtual Assistant qualifies them with empathy and books an appointment — then queues clinical intake automatically.",
+    msgs:[["them","Hi, I think I need help but I don't know where to start."],["us","I'm really glad you reached out. You're in the right place. Can I ask a few quick questions to get you to the right care?"],["them","Sure."],["us","You're a strong fit for our outpatient program. I have an opening Thursday at 2pm — shall I book it?"],["them","Yes please."],["tag","Booked Thu 2:00pm · intake link sent"]]},
+  afterhours:{label:"Front Door · After hours",desc:"It's late and a patient reaches out in distress. Front Door responds instantly, with warmth, and gets them an appointment for the morning.",
+    msgs:[["them","It's 11pm and I'm not okay. Are you open?"],["us","I'm here, and I'm really glad you reached out. You don't have to wait until morning."],["us","Based on what you've shared, our team can see you tomorrow at 9am. Can I hold that for you?"],["them","Yes."],["tag","Booked Fri 9:00am · confirmation sent"]]},
+  insurance:{label:"Front Door · Coverage check",desc:"The assistant pre-qualifies insurance and converts the inquiry into a scheduled appointment in one conversation.",
+    msgs:[["them","Do you take Aetna? And how much will this cost me?"],["us","Yes, we work with Aetna. Can I grab a few details to check your coverage and find the right program?"],["them","Aetna PPO, and it's for my son."],["us","Thank you. He qualifies for our adolescent outpatient track. I can schedule an intake for Monday at 10am."],["tag","Qualified · Aetna PPO · booked Mon 10:00am"]]},
+  clinical:{label:"Front Door · Intake · PHQ-9",desc:"After booking, Clinical Intake Automation administers a validated assessment, scores it, and raises a risk flag to the clinical team.",
+    msgs:[["us","Over the last two weeks, how often have you felt down, depressed, or hopeless?"],["them","More than half the days."],["us","Thank you for sharing that. A couple more questions and you're all set."],["tag","PHQ-9 score 16 · moderately severe"],["risk","⚠ Risk flag raised · clinical team notified"]]}
+};
+let current="intake",timer=null;
+const feed=document.getElementById('feed');
+function render(k){
+  current=k;clearTimeout(timer);feed.innerHTML="";
+  document.getElementById('barlabel').innerHTML=SCN[k].label+' <span class="live">Online</span>';
+  document.getElementById('scn-desc').textContent=SCN[k].desc;
+  document.querySelectorAll('#scn button').forEach(b=>b.classList.toggle('active',b.dataset.k===k));
+  let i=0;
+  (function step(){
+    if(i>=SCN[k].msgs.length)return;
+    const [t,txt]=SCN[k].msgs[i++];
+    const el=document.createElement('div');
+    if(t==="tag"){el.className="tag";el.textContent=txt;}
+    else if(t==="risk"){el.className="tag";el.style.cssText="background:#fdece7;color:#b8551f;border-color:#f3c9b8";el.textContent=txt;}
+    else{el.className="bubble "+t;el.textContent=txt;}
+    feed.appendChild(el);
+    timer=setTimeout(step,750);
+  })();
+}
+document.getElementById('scn').addEventListener('click',e=>{if(e.target.dataset.k)render(e.target.dataset.k);});
+document.getElementById('replay').addEventListener('click',()=>render(current));
+render('intake');
+function bookSubmit(e){e.preventDefault();document.getElementById('demoform').style.display='none';document.getElementById('thanks').style.display='block';return false;}
+</script>
+</body>
+</html>
