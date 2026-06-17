@@ -273,5 +273,5 @@ footer.site .logo-img{height:30px;filter:brightness(0) invert(1)}
 .vd-gate-logo{gap:0}
 
 /* customer logo bar images */
-.logobar .row img{height:42px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.62;transition:.2s}
+.logobar .row img{height:30px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.7;transition:.2s}
 .logobar .row img:hover{filter:grayscale(0);opacity:1}
