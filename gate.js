@@ -1,5 +1,5 @@
 /* Staging gate: triple-click the lock-screen logo to reveal the page.
-   Obscurity only — not a substitute for real access control. */
+   Obscurity only, not a substitute for real access control. */
 (function () {
   function unlock() {
     try { sessionStorage.setItem('vd-unlocked', '1'); } catch (e) {}

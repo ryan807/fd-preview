@@ -47,7 +47,7 @@
 <div id="vd-gate" role="dialog" aria-label="Private page">
   <div class="vd-gate-inner">
     <div class="vd-lock" aria-hidden="true">&#128274;</div>
-    <div class="vd-gate-logo" id="vd-unlock" title="Videra"><span class="mark">V</span> Videra</div>
+    <div class="vd-gate-logo" id="vd-unlock" title="Videra"><img class="logo-img" src="videra-logo.svg" alt="Videra Health"></div>
     <p class="vd-gate-title">This page is private</p>
     <p class="vd-gate-sub">This area is under construction and not yet available.</p>
   </div>
@@ -59,7 +59,7 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="logo" href="index.html"><span class="mark">V</span> Videra</a>
+    <a class="logo" href="index.html"><img class="logo-img" src="videra-logo.svg" alt="Videra Health"></a>
     <nav class="navlinks">
       <span class="has-menu">Product ▾
         <div class="menu">
@@ -80,7 +80,7 @@
     <div class="breadcrumb" style="text-align:center"><a href="index.html">Front Door</a> &nbsp;/&nbsp; Demos</div>
     <span class="eyebrow" style="color:#ffd9c2">Try it</span>
     <h1>See Front Door in action.</h1>
-    <p style="margin:14px auto 0">Pick a scenario and watch the AI handle it — no demo call required. Or book a guided walkthrough with our team.</p>
+    <p style="margin:14px auto 0">Pick a scenario and watch the AI handle it. No demo call required. Or book a guided walkthrough with our team.</p>
   </div>
 </section>
 
@@ -93,7 +93,7 @@
       <div class="launch-inner">
         <span class="lw-eyebrow">Front Door · Interactive walkthrough</span>
         <h3 class="lw-title">A phone call becomes a complete client record.</h3>
-        <p class="lw-sub">Step through how Front Door's voice agent captures a caller's intake and hands a fully-structured client record off to your EHR — with no human data entry in between.</p>
+        <p class="lw-sub">Step through how Front Door's voice agent captures a caller's intake and hands a fully-structured client record off to your EHR, with no human data entry in between.</p>
         <div class="lw-meta"><span>13 guided steps</span><span>~2 minutes</span><span>Autoplay or self-paced</span></div>
         <a class="btn btn-primary btn-lg" href="https://viderahealth.com/demo-frontdoor.html" target="_blank" rel="noopener">▶ &nbsp;Launch the live walkthrough →</a>
         <span class="lw-note">Opens the interactive demo in a new tab</span>
@@ -117,7 +117,7 @@
       </div>
       <div>
         <h3 style="font-size:24px;margin-bottom:12px">What you're seeing</h3>
-        <p class="muted" id="scn-desc" style="font-size:16px">A patient reaches out for the first time. The Virtual Assistant qualifies them with empathy and books an appointment — then queues clinical intake automatically.</p>
+        <p class="muted" id="scn-desc" style="font-size:16px">A patient reaches out for the first time. The Virtual Assistant qualifies them with empathy and books an appointment, then queues clinical intake automatically.</p>
         <div class="note">This is a scripted preview for illustration. In a live environment, Front Door runs on your intake logic, your programs, and your EHR.</div>
         <div style="margin-top:26px"><a class="btn btn-primary btn-lg" href="#book">Book a guided demo →</a></div>
       </div>
@@ -153,7 +153,7 @@
         </form>
         <div id="thanks" style="display:none;text-align:center;padding:30px 10px">
           <div style="font-size:42px">✓</div>
-          <h3 style="margin:10px 0">Thanks — we'll be in touch.</h3>
+          <h3 style="margin:10px 0">Thanks, we'll be in touch.</h3>
           <p class="muted">A Videra specialist will reach out within one business day to schedule your walkthrough.</p>
         </div>
       </div>
@@ -165,8 +165,8 @@
   <div class="wrap">
     <div class="top">
       <div>
-        <div class="logo"><span class="mark">V</span> Videra</div>
-        <p class="blurb">The AI platform for behavioral health. One model that understands mental health — deployed across engagement, intake, assessment, documentation, and research.</p>
+        <div class="logo"><img class="logo-img" src="videra-logo.svg" alt="Videra Health"></div>
+        <p class="blurb">The AI platform for behavioral health. One model that understands mental health, deployed across engagement, intake, assessment, documentation, and research.</p>
         <div class="badges"><span>HIPAA</span><span>SOC 2 Type II</span><span>FDA Registered</span></div>
       </div>
       <div><h5>Product</h5><ul><li><a href="virtual-assistant.html">Virtual Assistant</a></li><li><a href="clinical-intake.html">Clinical Intake</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="demo.html">Demos</a></li></ul></div>
@@ -179,8 +179,8 @@
 
 <script>
 const SCN={
-  intake:{label:"Front Door · Web chat",desc:"A patient reaches out for the first time. The Virtual Assistant qualifies them with empathy and books an appointment — then queues clinical intake automatically.",
-    msgs:[["them","Hi, I think I need help but I don't know where to start."],["us","I'm really glad you reached out. You're in the right place. Can I ask a few quick questions to get you to the right care?"],["them","Sure."],["us","You're a strong fit for our outpatient program. I have an opening Thursday at 2pm — shall I book it?"],["them","Yes please."],["tag","Booked Thu 2:00pm · intake link sent"]]},
+  intake:{label:"Front Door · Web chat",desc:"A patient reaches out for the first time. The Virtual Assistant qualifies them with empathy and books an appointment, then queues clinical intake automatically.",
+    msgs:[["them","Hi, I think I need help but I don't know where to start."],["us","I'm really glad you reached out. You're in the right place. Can I ask a few quick questions to get you to the right care?"],["them","Sure."],["us","You're a strong fit for our outpatient program. I have an opening Thursday at 2pm. Shall I book it?"],["them","Yes please."],["tag","Booked Thu 2:00pm · intake link sent"]]},
   afterhours:{label:"Front Door · After hours",desc:"It's late and a patient reaches out in distress. Front Door responds instantly, with warmth, and gets them an appointment for the morning.",
     msgs:[["them","It's 11pm and I'm not okay. Are you open?"],["us","I'm here, and I'm really glad you reached out. You don't have to wait until morning."],["us","Based on what you've shared, our team can see you tomorrow at 9am. Can I hold that for you?"],["them","Yes."],["tag","Booked Fri 9:00am · confirmation sent"]]},
   insurance:{label:"Front Door · Coverage check",desc:"The assistant pre-qualifies insurance and converts the inquiry into a scheduled appointment in one conversation.",
