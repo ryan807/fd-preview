@@ -263,3 +263,10 @@ html:not(.vd-unlocked) body{overflow:hidden;height:100vh}
   display:flex;align-items:center;justify-content:center;color:#021f37;font-weight:800;font-size:18px}
 .vd-gate-title{font-size:22px;font-weight:700;color:#fff;margin-bottom:8px}
 .vd-gate-sub{font-size:15px;color:#9fb4ce;line-height:1.6}
+
+/* ---- real Videra logo ---- */
+.logo-img{height:34px;width:auto;display:block}
+.logo{gap:0}
+footer.site .logo-img{height:30px;filter:brightness(0) invert(1)}
+.vd-gate-logo .logo-img{height:46px;filter:brightness(0) invert(1)}
+.vd-gate-logo{gap:0}
