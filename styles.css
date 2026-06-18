@@ -272,6 +272,48 @@ footer.site .logo-img{height:30px;filter:brightness(0) invert(1)}
 .vd-gate-logo .logo-img{height:46px;filter:brightness(0) invert(1)}
 .vd-gate-logo{gap:0}
 
-/* customer logo bar images */
-.logobar .row img{height:30px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.7;transition:.2s}
-.logobar .row img:hover{filter:grayscale(0);opacity:1}
+/* logo carousels (marquee) */
+.marquee{overflow:hidden;width:100%;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee-track{display:flex;align-items:center;gap:72px;width:max-content;
+  animation:vd-marquee 30s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee img{height:30px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.7;flex:0 0 auto}
+@keyframes vd-marquee{from{transform:translateX(0)}to{transform:translateX(-25%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;justify-content:center;gap:40px}}
+
+/* hero animated chat (rotating conversations) */
+.herochat{display:flex;flex-direction:column}
+.herochat .mock .body{min-height:360px;max-height:360px;overflow:hidden;justify-content:flex-end}
+.hc-anim{animation:hc-in .35s ease both}
+@keyframes hc-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.bubble.typing{align-self:flex-end;display:inline-flex;gap:4px;align-items:center;width:auto;padding:13px 16px}
+.bubble.typing span{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.75);display:inline-block;animation:hc-blink 1s infinite}
+.bubble.typing span:nth-child(2){animation-delay:.2s}
+.bubble.typing span:nth-child(3){animation-delay:.4s}
+@keyframes hc-blink{0%,60%,100%{opacity:.3}30%{opacity:1}}
+.hc-cta{align-self:flex-end;background:var(--teal);color:#fff;border:none;border-radius:10px;padding:11px 16px;
+  font-weight:600;font-size:14px;cursor:pointer;display:inline-flex;gap:8px;align-items:center;
+  box-shadow:0 4px 12px rgba(15,124,124,.3);transition:.15s}
+.hc-cta:hover{filter:brightness(1.06)}
+.hc-cta.pressed{transform:scale(.96);opacity:.92}
+.hc-dots{display:flex;gap:9px;justify-content:center;margin-top:18px}
+.hc-dot{width:9px;height:9px;border-radius:999px;background:rgba(255,255,255,.4);border:none;padding:0;cursor:pointer;transition:.25s}
+.hc-dot:hover{background:rgba(255,255,255,.7)}
+.hc-dot.active{width:24px;background:#fff}
+/* in-chat video visit */
+.vid{height:324px;width:100%;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;background:#0a1f33}
+.vid .main{flex:1;position:relative;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 35%,#173a63,#0a1f33)}
+.vid .avatar{width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,#5585E7,#9ec1f5);
+  color:#06203c;font-size:30px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.vid .self{position:absolute;right:12px;bottom:12px;width:78px;height:56px;border-radius:8px;background:#16314f;
+  border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;color:#9fb4ce;font-size:11px}
+.vid .cap{position:absolute;left:12px;top:12px;display:flex;align-items:center;gap:7px;background:rgba(0,0,0,.4);
+  color:#fff;font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px}
+.vid .cap::before{content:"";width:7px;height:7px;border-radius:50%;background:#3ad29f;animation:hc-pulse 1.6s infinite}
+@keyframes hc-pulse{0%{box-shadow:0 0 0 0 rgba(58,210,159,.5)}70%{box-shadow:0 0 0 8px rgba(58,210,159,0)}100%{box-shadow:0 0 0 0 rgba(58,210,159,0)}}
+.vid .name{position:absolute;left:12px;bottom:12px;color:#fff;font-size:13px;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.vid .controls{display:flex;gap:14px;justify-content:center;padding:14px;background:#08182b}
+.vid .ctrl{width:42px;height:42px;border-radius:50%;background:#1b3a5c;color:#fff;display:flex;align-items:center;justify-content:center;font-size:17px}
+.vid .ctrl.end{background:#e24b4a}

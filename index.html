@@ -61,15 +61,15 @@
         <a class="btn btn-ghost btn-lg" href="demo.html#try">See it live</a>
       </div>
     </div>
-    <div class="mock" aria-hidden="true">
-      <div class="bar">Front Door · Live conversation <span class="live">Online</span></div>
-      <div class="body">
-        <div class="bubble them">Hi, I think I need help but I don't know where to start. Do you take Aetna?</div>
-        <div class="bubble us">I'm really glad you reached out. Yes, we work with Aetna. Can I ask a few quick questions to get you to the right care?</div>
-        <span class="tag">Qualified · Aetna PPO · anxiety + depression</span>
-        <div class="bubble us">You're a great fit for our outpatient program. I have an opening Thursday at 2pm. Shall I book it?</div>
-        <div class="bubble them">Yes please.</div>
-        <span class="tag">Booked Thu 2:00pm · intake link sent · PHQ-9 + GAD-7 queued</span>
+    <div class="herochat">
+      <div class="mock" aria-hidden="true">
+        <div class="bar"><span id="hc-title">Front Door · Live conversation</span> <span class="live">Online</span></div>
+        <div class="body" id="hc-body"></div>
+      </div>
+      <div class="hc-dots" role="tablist" aria-label="Example conversations">
+        <button class="hc-dot active" data-i="0" aria-label="Insurance verification"></button>
+        <button class="hc-dot" data-i="1" aria-label="Appointment scheduling"></button>
+        <button class="hc-dot" data-i="2" aria-label="Getting started and video visit"></button>
       </div>
     </div>
   </div>
@@ -91,17 +91,42 @@
 <section class="section tight">
   <div class="wrap logobar">
     <div class="label">Trusted on the front lines of behavioral health</div>
-    <div class="row">
-      <img src="https://viderahealth.com/images/logos/discovery-behavioral-health-logo.svg" alt="Discovery Behavioral Health">
-      <img src="https://viderahealth.com/images/logos/signature-health-services-black.png" alt="Signature Healthcare Services">
-      <img src="https://viderahealth.com/images/logos/logo.webp" alt="Visionary Psychiatry">
+    <div class="marquee">
+      <div class="marquee-track">
+        <img src="https://viderahealth.com/images/logos/discovery-behavioral-health-logo.svg" alt="Discovery Behavioral Health">
+        <img src="https://viderahealth.com/images/logos/signature-health-services-black.png" alt="Signature Healthcare Services">
+        <img src="https://viderahealth.com/images/logos/logo.webp" alt="Visionary Psychiatry">
+        <img src="https://viderahealth.com/images/logos/discovery-behavioral-health-logo.svg" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/signature-health-services-black.png" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/logo.webp" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/discovery-behavioral-health-logo.svg" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/signature-health-services-black.png" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/logo.webp" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/discovery-behavioral-health-logo.svg" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/signature-health-services-black.png" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/logo.webp" alt="" aria-hidden="true">
+      </div>
     </div>
-    <div class="label" style="margin-top:44px">Works with the EHRs you already run</div>
-    <div class="row">
-      <img src="https://viderahealth.com/images/logos/image.webp" alt="Kipu Health EHR">
-      <img src="https://viderahealth.com/images/logos/Alleva-Primary.webp" alt="Alleva EHR">
-      <img src="https://viderahealth.com/images/logos/022c9630-f6c2-4406-87f1-40805f12474d.png" alt="BestNotes">
-      <img src="https://viderahealth.com/images/logos/bluestep-logo.svg" alt="BlueStep Systems">
+    <div class="label" style="margin-top:40px">Works with the EHRs you already run</div>
+    <div class="marquee">
+      <div class="marquee-track" style="animation-duration:36s">
+        <img src="https://viderahealth.com/images/logos/image.webp" alt="Kipu Health EHR">
+        <img src="https://viderahealth.com/images/logos/Alleva-Primary.webp" alt="Alleva EHR">
+        <img src="https://viderahealth.com/images/logos/022c9630-f6c2-4406-87f1-40805f12474d.png" alt="BestNotes">
+        <img src="https://viderahealth.com/images/logos/bluestep-logo.svg" alt="BlueStep Systems">
+        <img src="https://viderahealth.com/images/logos/image.webp" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/Alleva-Primary.webp" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/022c9630-f6c2-4406-87f1-40805f12474d.png" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/bluestep-logo.svg" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/image.webp" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/Alleva-Primary.webp" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/022c9630-f6c2-4406-87f1-40805f12474d.png" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/bluestep-logo.svg" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/image.webp" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/Alleva-Primary.webp" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/022c9630-f6c2-4406-87f1-40805f12474d.png" alt="" aria-hidden="true">
+        <img src="https://viderahealth.com/images/logos/bluestep-logo.svg" alt="" aria-hidden="true">
+      </div>
     </div>
   </div>
 </section>
@@ -433,6 +458,92 @@
   }
   [inq,miss,conv,val].forEach(el=>el.addEventListener('input',calc));
   calc();
+})();
+</script>
+
+<script>
+(function(){
+  const body=document.getElementById('hc-body');
+  const titleEl=document.getElementById('hc-title');
+  if(!body) return;
+  const dots=[].slice.call(document.querySelectorAll('.hc-dot'));
+  const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+  let runId=0;
+
+  const SCEN=[
+    {title:"Front Door · Insurance check", steps:[
+      {t:'them',x:"Do you take Aetna? And how much will this cost me?"},
+      {t:'us',x:"Yes, we work with Aetna. I can verify your benefits right now, can I grab a couple details?"},
+      {t:'them',x:"Sure, Aetna PPO."},
+      {t:'tag',x:"Verifying coverage…"},
+      {t:'tag',x:"Verified · Aetna PPO · in-network · $30 copay"},
+      {t:'us',x:"Good news, you're covered in-network. Your estimated copay is $30 per visit."}
+    ]},
+    {title:"Front Door · Scheduling", steps:[
+      {t:'them',x:"I'd like to set up an appointment."},
+      {t:'us',x:"Happy to help. Are mornings or afternoons better for you?"},
+      {t:'them',x:"Afternoons."},
+      {t:'us',x:"I have Thursday at 2:00pm or Friday at 3:30pm. Which works?"},
+      {t:'them',x:"Thursday works."},
+      {t:'tag',x:"Booked · Thu 2:00pm · confirmation sent"}
+    ]},
+    {title:"Front Door · Getting started", steps:[
+      {t:'them',x:"I'm looking for help for my teenage son. Not sure where to begin."},
+      {t:'us',x:"You're in the right place. We can get started now by phone or video, whichever is easier."},
+      {t:'us',x:"First I'll send you a Videra, a short clinical assessment, so our team understands his needs before the first visit."},
+      {t:'tag',x:"Sent · Videra assessment link · via SMS"},
+      {t:'us',x:"Want to start a quick video visit now to go through it together?"},
+      {t:'cta',x:"Start video visit"},
+      {t:'video'}
+    ]}
+  ];
+
+  function add(html){
+    const tmp=document.createElement('div'); tmp.innerHTML=html;
+    const el=tmp.firstElementChild; el.classList.add('hc-anim');
+    body.appendChild(el); body.scrollTop=body.scrollHeight; return el;
+  }
+  async function typing(){
+    const el=add('<div class="bubble us typing"><span></span><span></span><span></span></div>');
+    await sleep(620); el.remove();
+  }
+  function videoHTML(){
+    return '<div class="vid hc-anim">'+
+      '<div class="main">'+
+        '<div class="cap">Live · Video visit</div>'+
+        '<div class="avatar">ML</div>'+
+        '<div class="name">Dr. Morgan Lee · Videra</div>'+
+        '<div class="self">You</div>'+
+      '</div>'+
+      '<div class="controls"><div class="ctrl">🎙</div><div class="ctrl">🎥</div><div class="ctrl end">✕</div></div>'+
+    '</div>';
+  }
+  async function play(i){
+    const myRun=++runId;
+    dots.forEach((d,k)=>d.classList.toggle('active',k===i));
+    titleEl.textContent=SCEN[i].title;
+    body.innerHTML='';
+    for(const s of SCEN[i].steps){
+      if(myRun!==runId) return;
+      if(s.t==='us'){ await typing(); if(myRun!==runId) return; }
+      if(s.t==='them') add('<div class="bubble them">'+s.x+'</div>');
+      else if(s.t==='us') add('<div class="bubble us">'+s.x+'</div>');
+      else if(s.t==='tag') add('<span class="tag">'+s.x+'</span>');
+      else if(s.t==='cta'){
+        const b=add('<button class="hc-cta">🎥 '+s.x+'</button>');
+        b.addEventListener('click',function(){ b.classList.add('pressed'); });
+        setTimeout(function(){ b.classList.add('pressed'); },700);
+      }
+      else if(s.t==='video'){ body.innerHTML=videoHTML(); }
+      await sleep(s.t==='video'?3600:1050);
+      if(myRun!==runId) return;
+    }
+    await sleep(2200);
+    if(myRun!==runId) return;
+    play((i+1)%SCEN.length);
+  }
+  dots.forEach(function(d){ d.addEventListener('click',function(){ play(parseInt(d.getAttribute('data-i'),10)); }); });
+  play(0);
 })();
 </script>
 </body>
