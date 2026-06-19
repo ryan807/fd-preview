@@ -11,13 +11,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div id="vd-gate" role="dialog" aria-label="Private page">
   <div class="vd-gate-inner">
-    <div class="vd-lock" aria-hidden="true">&#128274;</div>
+    <div class="vd-lock" aria-hidden="true"><i class="ti ti-lock"></i></div>
     <div class="vd-gate-logo" id="vd-unlock" title="Videra"><img class="logo-img" src="videra-logo.svg" alt="Videra Health"></div>
     <p class="vd-gate-title">This page is private</p>
     <p class="vd-gate-sub">This area is under construction and not yet available.</p>
@@ -32,10 +33,10 @@
   <div class="wrap nav-inner">
     <a class="logo" href="index.html"><img class="logo-img" src="videra-logo.svg" alt="Videra Health"></a>
     <nav class="navlinks">
-      <span class="has-menu">Product ▾
+      <span class="has-menu">Product <i class="ti ti-chevron-down"></i>
         <div class="menu">
-          <a href="virtual-assistant.html"><span class="ic">◈</span><span><span class="mt">Virtual Assistant</span><span class="md">24/7 engagement, qualification & scheduling</span></span></a>
-          <a href="clinical-intake.html"><span class="ic">✚</span><span><span class="mt">Clinical Intake Automation</span><span class="md">Assessments, history & documents before visit 1</span></span></a>
+          <a href="virtual-assistant.html"><span class="ic"><i class="ti ti-message-2"></i></span><span><span class="mt">Virtual Assistant</span><span class="md">24/7 engagement, qualification & scheduling</span></span></a>
+          <a href="clinical-intake.html"><span class="ic"><i class="ti ti-clipboard-plus"></i></span><span><span class="mt">Clinical Intake Automation</span><span class="md">Assessments, history & documents before visit 1</span></span></a>
         </div>
       </span>
       <a href="pricing.html">Pricing</a>
@@ -52,7 +53,7 @@
 <section class="hero">
   <div class="wrap grid">
     <div>
-      <span class="pill">◈ &nbsp;Virtual Assistant&nbsp; + &nbsp;✚ &nbsp;Clinical Intake</span>
+      <span class="pill"><i class="ti ti-message-2"></i> &nbsp;Virtual Assistant&nbsp; + &nbsp;<i class="ti ti-clipboard-plus"></i> &nbsp;Clinical Intake</span>
       <span class="eyebrow">Engaging patients before the opportunity fades</span>
       <h1>Front Door</h1>
       <p class="sub">A 24/7 conversational AI that screens, qualifies, and schedules patients in real time, then collects their assessments, history, and documents before the first appointment. Two engines, one seamless front door.</p>
@@ -136,11 +137,11 @@
   <div class="wrap center">
     <span class="eyebrow">The problem</span>
     <h2>The hardest step a patient takes is the first one.</h2>
-    <p class="lead" style="margin-top:18px">When someone finally reaches out for behavioral health care, the window is short. Calls go to voicemail after hours, forms get abandoned, and intake paperwork eats hours of staff time. Every delay is a person who may not call back, and a clinician buried in admin instead of care.</p>
+    <p class="lead" style="margin-top:18px">When someone finally reaches out for behavioral health care, the window is short. Calls go to voicemail after hours, forms get abandoned, and intake paperwork eats hours of staff time. Every delay is a person who may not call back, an admin team stretched thin, and a clinician buried in paperwork instead of care.</p>
     <div class="grid-3" style="margin-top:48px;text-align:left">
-      <div class="card"><div class="ic">⏱</div><h3>Inquiries go cold</h3><p>After-hours and weekend inquiries wait for a callback that often comes too late. The moment of readiness passes.</p></div>
-      <div class="card"><div class="ic">📋</div><h3>Intake is a bottleneck</h3><p>Manual intake takes ~2 hours per patient, delays first appointments, and pulls staff away from clinical work.</p></div>
-      <div class="card"><div class="ic">⚠</div><h3>Risk hides in the gaps</h3><p>Critical clinical flags surface late, sometimes not until the patient is in the room, when they could have been caught at intake.</p></div>
+      <div class="card"><div class="ic"><i class="ti ti-clock"></i></div><h3>Inquiries go cold</h3><p>After-hours and weekend inquiries wait for a callback that often comes too late. The moment of readiness passes.</p></div>
+      <div class="card"><div class="ic"><i class="ti ti-clipboard-text"></i></div><h3>Intake is a bottleneck</h3><p>Manual intake takes ~2 hours per patient, delays first appointments, and pulls staff away from clinical work.</p></div>
+      <div class="card"><div class="ic"><i class="ti ti-alert-triangle"></i></div><h3>Risk hides in the gaps</h3><p>Critical clinical flags surface late, sometimes not until the patient is in the room, when they could have been caught at intake.</p></div>
     </div>
   </div>
 </section>
@@ -155,7 +156,7 @@
     </div>
     <div class="grid-2">
       <div class="engine va">
-        <span class="kicker">◈ Virtual Assistant</span>
+        <span class="kicker"><i class="ti ti-message-2"></i> Virtual Assistant</span>
         <h3>Engage, qualify & schedule, 24/7</h3>
         <p class="muted">The always-on front desk. Conversational AI answers every inquiry across web, phone, and SMS, qualifies the patient with empathy, and books the appointment before the moment passes.</p>
         <ul>
@@ -167,7 +168,7 @@
         <div class="foot"><a class="btn btn-outline" href="virtual-assistant.html">Explore Virtual Assistant →</a></div>
       </div>
       <div class="engine ci">
-        <span class="kicker">✚ Clinical Intake Automation</span>
+        <span class="kicker"><i class="ti ti-clipboard-plus"></i> Clinical Intake Automation</span>
         <h3>Collect assessments & history before visit 1</h3>
         <p class="muted">The clinical intake engine. After booking, AI guides each patient through validated assessments, clinical history, and document collection, analyzed for risk and ready in your EHR before they arrive.</p>
         <ul>
@@ -199,38 +200,6 @@
   </div>
 </section>
 
-<!-- FEATURE GRID: Virtual Assistant -->
-<section class="section">
-  <div class="wrap">
-    <div style="margin-bottom:34px"><span class="kicker" style="display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:6px 12px;border-radius:999px;background:#fdeee5;color:var(--orange-dark)">◈ Virtual Assistant</span>
-      <h2 style="margin-top:14px">Capture every inquiry, convert it to a booking.</h2></div>
-    <div class="grid-3">
-      <div class="card"><div class="ic">💬</div><h3>AI-powered conversations</h3><p>Natural language understands patient needs and responds with empathy, qualifying leads 24/7 without human intervention.</p></div>
-      <div class="card"><div class="ic">🔀</div><h3>Omnichannel engagement</h3><p>Meet patients on web chat, phone, and SMS, with seamless handoffs to your staff when a human touch is needed.</p></div>
-      <div class="card"><div class="ic">📅</div><h3>Real-time scheduling</h3><p>Turn inquiries into booked appointments on the spot. No phone tag, no missed callbacks, no delays.</p></div>
-      <div class="card"><div class="ic">🌙</div><h3>24/7 availability</h3><p>Never miss a patient inquiry. AI responds instantly, day or night, the moment a patient is ready to seek help.</p></div>
-      <div class="card"><div class="ic">🤝</div><h3>Smart handoffs</h3><p>AI gathers the essentials up front so your admissions team focuses on the patients who need human support.</p></div>
-      <div class="card"><div class="ic">🌐</div><h3>Multilingual support</h3><p>Engage patients in English and Spanish with the same empathy and accuracy across every channel.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURE GRID: Clinical Intake -->
-<section class="section bg-soft">
-  <div class="wrap">
-    <div style="margin-bottom:34px"><span class="kicker" style="display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:6px 12px;border-radius:999px;background:#e7f0fb;color:var(--navy)">✚ Clinical Intake Automation</span>
-      <h2 style="margin-top:14px">Complete clinical data, before they walk in.</h2></div>
-    <div class="grid-3">
-      <div class="card"><div class="ic">🗂</div><h3>Smart intake collection</h3><p>AI-guided conversation collects comprehensive clinical data naturally, not endless static forms.</p></div>
-      <div class="card"><div class="ic">📊</div><h3>Standardized assessments</h3><p>Automatically administer validated instruments (PHQ-9, GAD-7, and more) and capture responses accurately.</p></div>
-      <div class="card"><div class="ic">⏳</div><h3>Async flexibility</h3><p>Patients complete intake on their own time, before the appointment, not in the waiting room.</p></div>
-      <div class="card"><div class="ic">🚩</div><h3>Risk flagging</h3><p>AI identifies high-risk responses and alerts clinical staff immediately for rapid intervention.</p></div>
-      <div class="card"><div class="ic">📎</div><h3>Document collection</h3><p>Gather insurance cards, IDs, and consent forms digitally with secure upload and storage.</p></div>
-      <div class="card"><div class="ic">🔄</div><h3>EHR auto-population</h3><p>Data flows directly into your EHR. No duplicate entry, no transcription errors.</p></div>
-    </div>
-  </div>
-</section>
-
 <!-- RESULTS -->
 <section class="section bg-navy">
   <div class="wrap">
@@ -249,7 +218,7 @@
 </section>
 
 <!-- CALCULATOR -->
-<section class="section">
+<section class="section bg-soft">
   <div class="wrap">
     <div class="center" style="margin-bottom:40px">
       <span class="eyebrow">Run the math</span>
@@ -259,21 +228,22 @@
     <div class="calc">
       <div class="inputs">
         <div class="field">
-          <label>Monthly inquiries <span class="val" id="v-inq">600</span></label>
+          <label>Inquiries received <span class="per">/ month</span> <span class="val" id="v-inq">600</span></label>
           <input type="range" id="inq" min="50" max="3000" step="10" value="600">
         </div>
         <div class="field">
-          <label>Currently missed / uncaptured <span class="val" id="v-miss">30%</span></label>
-          <input type="range" id="miss" min="5" max="60" step="1" value="30">
-        </div>
-        <div class="field">
-          <label>Inquiry-to-patient conversion <span class="val" id="v-conv">25%</span></label>
+          <label>Inquiry-to-patient conversion rate <span class="val" id="v-conv">25%</span></label>
           <input type="range" id="conv" min="5" max="60" step="1" value="25">
         </div>
         <div class="field">
-          <label>Average value per patient <span class="val" id="v-val">$4,000</span></label>
+          <label>Inquiries currently missed or uncaptured <span class="val" id="v-miss">30%</span></label>
+          <input type="range" id="miss" min="5" max="60" step="1" value="30">
+        </div>
+        <div class="field">
+          <label>Average revenue per patient <span class="val" id="v-val">$4,000</span></label>
           <input type="range" id="val" min="500" max="20000" step="100" value="4000">
         </div>
+        <p class="calc-note">Conversion and missed rates are a share of your monthly inquiries.</p>
       </div>
       <div class="results">
         <div class="rline"><span class="k">Missed inquiries / month</span><span class="v" id="r-miss">180</span></div>
@@ -281,19 +251,6 @@
         <div class="rline big"><span class="k">Annual revenue recovered</span><span class="v" id="r-rev">$2.2M</span></div>
         <p style="color:#bcd0ea;font-size:12.5px;margin-top:18px">Estimate only: missed inquiries × conversion × average patient value, recovered by 24/7 capture. Your results will vary.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- INTEGRATIONS -->
-<section class="section bg-soft">
-  <div class="wrap center">
-    <span class="eyebrow">Integrations</span>
-    <h2>Lives inside the systems you already run.</h2>
-    <p class="lead" style="margin:16px auto 36px">Front Door connects with the EHRs and tools behavioral health teams rely on, so data flows where it belongs.</p>
-    <div class="intg">
-      <span>Kipu</span><span>BestNotes</span><span>KipuCRM</span><span>Lightning Step</span>
-      <span>Salesforce Health Cloud</span><span>HubSpot</span><span>Sunwave</span><span>+ more</span>
     </div>
   </div>
 </section>
@@ -306,10 +263,10 @@
       <h2>Engineered for behavioral health. Built to be trusted.</h2>
     </div>
     <div class="comp">
-      <div class="item"><div class="ic">🔒</div><h4>HIPAA compliant</h4><p>PHI processed in a secure, access-logged environment with encryption in transit and at rest.</p></div>
-      <div class="item"><div class="ic">🛡</div><h4>SOC 2 Type II</h4><p>Independently audited security controls across the platform.</p></div>
-      <div class="item"><div class="ic">🏛</div><h4>FDA registered</h4><p>A platform held to the standards of clinical-grade software.</p></div>
-      <div class="item"><div class="ic">🚨</div><h4>Risk-aware by design</h4><p>High-risk responses are flagged and escalated to your clinical team in real time.</p></div>
+      <div class="item"><div class="ic"><i class="ti ti-lock"></i></div><h4>HIPAA compliant</h4><p>PHI processed in a secure, access-logged environment with encryption in transit and at rest.</p></div>
+      <div class="item"><div class="ic"><i class="ti ti-shield-check"></i></div><h4>SOC 2 Type II</h4><p>Independently audited security controls across the platform.</p></div>
+      <div class="item"><div class="ic"><i class="ti ti-certificate"></i></div><h4>FDA registered</h4><p>A platform held to the standards of clinical-grade software.</p></div>
+      <div class="item"><div class="ic"><i class="ti ti-alert-triangle"></i></div><h4>Risk-aware by design</h4><p>High-risk responses are flagged and escalated to your clinical team in real time.</p></div>
     </div>
   </div>
 </section>
@@ -515,7 +472,7 @@
         '<div class="name">Dr. Morgan Lee · Videra</div>'+
         '<div class="self">You</div>'+
       '</div>'+
-      '<div class="controls"><div class="ctrl">🎙</div><div class="ctrl">🎥</div><div class="ctrl end">✕</div></div>'+
+      '<div class="controls"><div class="ctrl"><i class="ti ti-microphone"></i></div><div class="ctrl"><i class="ti ti-video"></i></div><div class="ctrl end"><i class="ti ti-phone-off"></i></div></div>'+
     '</div>';
   }
   async function play(i){
@@ -530,7 +487,7 @@
       else if(s.t==='us') add('<div class="bubble us">'+s.x+'</div>');
       else if(s.t==='tag') add('<span class="tag">'+s.x+'</span>');
       else if(s.t==='cta'){
-        const b=add('<button class="hc-cta">🎥 '+s.x+'</button>');
+        const b=add('<button class="hc-cta"><i class="ti ti-video"></i> '+s.x+'</button>');
         b.addEventListener('click',function(){ b.classList.add('pressed'); });
         setTimeout(function(){ b.classList.add('pressed'); },700);
       }

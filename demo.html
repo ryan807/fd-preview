@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="styles.css">
 <style>
 .scn{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
@@ -46,7 +47,7 @@
 
 <div id="vd-gate" role="dialog" aria-label="Private page">
   <div class="vd-gate-inner">
-    <div class="vd-lock" aria-hidden="true">&#128274;</div>
+    <div class="vd-lock" aria-hidden="true"><i class="ti ti-lock"></i></div>
     <div class="vd-gate-logo" id="vd-unlock" title="Videra"><img class="logo-img" src="videra-logo.svg" alt="Videra Health"></div>
     <p class="vd-gate-title">This page is private</p>
     <p class="vd-gate-sub">This area is under construction and not yet available.</p>
@@ -61,10 +62,10 @@
   <div class="wrap nav-inner">
     <a class="logo" href="index.html"><img class="logo-img" src="videra-logo.svg" alt="Videra Health"></a>
     <nav class="navlinks">
-      <span class="has-menu">Product ▾
+      <span class="has-menu">Product <i class="ti ti-chevron-down"></i>
         <div class="menu">
-          <a href="virtual-assistant.html"><span class="ic">◈</span><span><span class="mt">Virtual Assistant</span><span class="md">24/7 engagement, qualification & scheduling</span></span></a>
-          <a href="clinical-intake.html"><span class="ic">✚</span><span><span class="mt">Clinical Intake Automation</span><span class="md">Assessments, history & documents before visit 1</span></span></a>
+          <a href="virtual-assistant.html"><span class="ic"><i class="ti ti-message-2"></i></span><span><span class="mt">Virtual Assistant</span><span class="md">24/7 engagement, qualification & scheduling</span></span></a>
+          <a href="clinical-intake.html"><span class="ic"><i class="ti ti-clipboard-plus"></i></span><span><span class="mt">Clinical Intake Automation</span><span class="md">Assessments, history & documents before visit 1</span></span></a>
         </div>
       </span>
       <a href="pricing.html">Pricing</a>
@@ -95,7 +96,7 @@
         <h3 class="lw-title">A phone call becomes a complete client record.</h3>
         <p class="lw-sub">Step through how Front Door's voice agent captures a caller's intake and hands a fully-structured client record off to your EHR, with no human data entry in between.</p>
         <div class="lw-meta"><span>13 guided steps</span><span>~2 minutes</span><span>Autoplay or self-paced</span></div>
-        <a class="btn btn-primary btn-lg" href="https://viderahealth.com/demo-frontdoor.html" target="_blank" rel="noopener">▶ &nbsp;Launch the live walkthrough →</a>
+        <a class="btn btn-primary btn-lg" href="https://viderahealth.com/demo-frontdoor.html" target="_blank" rel="noopener"><i class="ti ti-player-play"></i> &nbsp;Launch the live walkthrough →</a>
         <span class="lw-note">Opens the interactive demo in a new tab</span>
       </div>
     </div>
@@ -113,7 +114,7 @@
           <div class="bar" id="barlabel">Front Door · Live conversation <span class="live">Online</span></div>
           <div class="body chatfeed" id="feed"></div>
         </div>
-        <div class="replay"><button class="btn btn-outline" id="replay">↻ Replay scenario</button></div>
+        <div class="replay"><button class="btn btn-outline" id="replay"><i class="ti ti-refresh"></i> Replay scenario</button></div>
       </div>
       <div>
         <h3 style="font-size:24px;margin-bottom:12px">What you're seeing</h3>
@@ -186,7 +187,7 @@ const SCN={
   insurance:{label:"Front Door · Coverage check",desc:"The assistant pre-qualifies insurance and converts the inquiry into a scheduled appointment in one conversation.",
     msgs:[["them","Do you take Aetna? And how much will this cost me?"],["us","Yes, we work with Aetna. Can I grab a few details to check your coverage and find the right program?"],["them","Aetna PPO, and it's for my son."],["us","Thank you. He qualifies for our adolescent outpatient track. I can schedule an intake for Monday at 10am."],["tag","Qualified · Aetna PPO · booked Mon 10:00am"]]},
   clinical:{label:"Front Door · Intake · PHQ-9",desc:"After booking, Clinical Intake Automation administers a validated assessment, scores it, and raises a risk flag to the clinical team.",
-    msgs:[["us","Over the last two weeks, how often have you felt down, depressed, or hopeless?"],["them","More than half the days."],["us","Thank you for sharing that. A couple more questions and you're all set."],["tag","PHQ-9 score 16 · moderately severe"],["risk","⚠ Risk flag raised · clinical team notified"]]}
+    msgs:[["us","Over the last two weeks, how often have you felt down, depressed, or hopeless?"],["them","More than half the days."],["us","Thank you for sharing that. A couple more questions and you're all set."],["tag","PHQ-9 score 16 · moderately severe"],["risk","<i class="ti ti-alert-triangle"></i> Risk flag raised · clinical team notified"]]}
 };
 let current="intake",timer=null;
 const feed=document.getElementById('feed');

@@ -317,3 +317,14 @@ footer.site .logo-img{height:30px;filter:brightness(0) invert(1)}
 .vid .controls{display:flex;gap:14px;justify-content:center;padding:14px;background:#08182b}
 .vid .ctrl{width:42px;height:42px;border-radius:50%;background:#1b3a5c;color:#fff;display:flex;align-items:center;justify-content:center;font-size:17px}
 .vid .ctrl.end{background:#e24b4a}
+
+/* icon sizing (Tabler) */
+i.ti{vertical-align:-0.125em;line-height:1}
+.menu .ic i.ti{font-size:18px}
+.navlinks .has-menu i.ti{font-size:15px;vertical-align:-2px}
+.kicker i.ti{font-size:15px;vertical-align:-2px}
+.eyebrow i.ti{font-size:15px;vertical-align:-2px}
+.hero .pill i.ti{font-size:16px}
+.tag i.ti{font-size:13px;vertical-align:-1px}
+.calc .per{color:var(--gray-light);font-weight:600;font-size:13px}
+.calc-note{font-size:12px;color:var(--gray-light);margin-top:2px;grid-column:1/-1}
