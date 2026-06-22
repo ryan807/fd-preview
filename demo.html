@@ -6,8 +6,8 @@
 <meta name="robots" content="noindex, nofollow">
 <script>try{if(sessionStorage.getItem('vd-unlocked')==='1')document.documentElement.classList.add('vd-unlocked');}catch(e){}</script>
 <script src="gate.js" defer></script>
-<title>Demos | Videra Front Door</title>
-<meta name="description" content="Try Front Door live or book a guided demo. Pick a scenario and watch the AI engage, qualify, schedule, and run clinical intake.">
+<title>Demos | Videra Intake Accelerator</title>
+<meta name="description" content="Try Intake Accelerator live or book a guided demo. Pick a scenario and watch the AI engage, qualify, schedule, and run clinical intake.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -78,9 +78,9 @@
 
 <section class="pagehead">
   <div class="wrap" style="text-align:center">
-    <div class="breadcrumb" style="text-align:center"><a href="index.html">Front Door</a> &nbsp;/&nbsp; Demos</div>
+    <div class="breadcrumb" style="text-align:center"><a href="index.html">Intake Accelerator</a> &nbsp;/&nbsp; Demos</div>
     <span class="eyebrow" style="color:#ffd9c2">Try it</span>
-    <h1>See Front Door in action.</h1>
+    <h1>See Intake Accelerator in action.</h1>
     <p style="margin:14px auto 0">Pick a scenario and watch the AI handle it. No demo call required. Or book a guided walkthrough with our team.</p>
   </div>
 </section>
@@ -92,9 +92,9 @@
 
     <div class="launch">
       <div class="launch-inner">
-        <span class="lw-eyebrow">Front Door · Interactive walkthrough</span>
+        <span class="lw-eyebrow">Intake Accelerator · Interactive walkthrough</span>
         <h3 class="lw-title">A phone call becomes a complete client record.</h3>
-        <p class="lw-sub">Step through how Front Door's voice agent captures a caller's intake and hands a fully-structured client record off to your EHR, with no human data entry in between.</p>
+        <p class="lw-sub">Step through how Intake Accelerator's voice agent captures a caller's intake and hands a fully-structured client record off to your EHR, with no human data entry in between.</p>
         <div class="lw-meta"><span>13 guided steps</span><span>~2 minutes</span><span>Autoplay or self-paced</span></div>
         <a class="btn btn-primary btn-lg" href="https://viderahealth.com/demo-frontdoor.html" target="_blank" rel="noopener"><i class="ti ti-player-play"></i> &nbsp;Launch the live walkthrough →</a>
         <span class="lw-note">Opens the interactive demo in a new tab</span>
@@ -111,7 +111,7 @@
           <button data-k="clinical">Clinical intake (PHQ-9)</button>
         </div>
         <div class="mock">
-          <div class="bar" id="barlabel">Front Door · Live conversation <span class="live">Online</span></div>
+          <div class="bar" id="barlabel">Intake Accelerator · Live conversation <span class="live">Online</span></div>
           <div class="body chatfeed" id="feed"></div>
         </div>
         <div class="replay"><button class="btn btn-outline" id="replay"><i class="ti ti-refresh"></i> Replay scenario</button></div>
@@ -119,7 +119,7 @@
       <div>
         <h3 style="font-size:24px;margin-bottom:12px">What you're seeing</h3>
         <p class="muted" id="scn-desc" style="font-size:16px">A patient reaches out for the first time. The Virtual Assistant qualifies them with empathy and books an appointment, then queues clinical intake automatically.</p>
-        <div class="note">This is a scripted preview for illustration. In a live environment, Front Door runs on your intake logic, your programs, and your EHR.</div>
+        <div class="note">This is a scripted preview for illustration. In a live environment, Intake Accelerator runs on your intake logic, your programs, and your EHR.</div>
         <div style="margin-top:26px"><a class="btn btn-primary btn-lg" href="#book">Book a guided demo →</a></div>
       </div>
     </div>
@@ -133,7 +133,7 @@
       <div>
         <span class="eyebrow">Book a demo</span>
         <h2>See it against your real call patterns.</h2>
-        <p class="lead" style="margin-top:16px">Thirty minutes. We'll walk through Front Door on your actual intake scenarios and leave you with a written pricing estimate.</p>
+        <p class="lead" style="margin-top:16px">Thirty minutes. We'll walk through Intake Accelerator on your actual intake scenarios and leave you with a written pricing estimate.</p>
         <ul class="engine va" style="border:none;padding:0;box-shadow:none;background:transparent;list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px">
           <li style="display:flex;gap:10px;color:var(--ink)"><span style="color:var(--orange);font-weight:800">✓</span> A live look at engagement + clinical intake</li>
           <li style="display:flex;gap:10px;color:var(--ink)"><span style="color:var(--orange);font-weight:800">✓</span> EHR integration walkthrough</li>
@@ -180,13 +180,13 @@
 
 <script>
 const SCN={
-  intake:{label:"Front Door · Web chat",desc:"A patient reaches out for the first time. The Virtual Assistant qualifies them with empathy and books an appointment, then queues clinical intake automatically.",
+  intake:{label:"Intake Accelerator · Web chat",desc:"A patient reaches out for the first time. The Virtual Assistant qualifies them with empathy and books an appointment, then queues clinical intake automatically.",
     msgs:[["them","Hi, I think I need help but I don't know where to start."],["us","I'm really glad you reached out. You're in the right place. Can I ask a few quick questions to get you to the right care?"],["them","Sure."],["us","You're a strong fit for our outpatient program. I have an opening Thursday at 2pm. Shall I book it?"],["them","Yes please."],["tag","Booked Thu 2:00pm · intake link sent"]]},
-  afterhours:{label:"Front Door · After hours",desc:"It's late and a patient reaches out in distress. Front Door responds instantly, with warmth, and gets them an appointment for the morning.",
+  afterhours:{label:"Intake Accelerator · After hours",desc:"It's late and a patient reaches out in distress. Intake Accelerator responds instantly, with warmth, and gets them an appointment for the morning.",
     msgs:[["them","It's 11pm and I'm not okay. Are you open?"],["us","I'm here, and I'm really glad you reached out. You don't have to wait until morning."],["us","Based on what you've shared, our team can see you tomorrow at 9am. Can I hold that for you?"],["them","Yes."],["tag","Booked Fri 9:00am · confirmation sent"]]},
-  insurance:{label:"Front Door · Coverage check",desc:"The assistant pre-qualifies insurance and converts the inquiry into a scheduled appointment in one conversation.",
+  insurance:{label:"Intake Accelerator · Coverage check",desc:"The assistant pre-qualifies insurance and converts the inquiry into a scheduled appointment in one conversation.",
     msgs:[["them","Do you take Aetna? And how much will this cost me?"],["us","Yes, we work with Aetna. Can I grab a few details to check your coverage and find the right program?"],["them","Aetna PPO, and it's for my son."],["us","Thank you. He qualifies for our adolescent outpatient track. I can schedule an intake for Monday at 10am."],["tag","Qualified · Aetna PPO · booked Mon 10:00am"]]},
-  clinical:{label:"Front Door · Intake · PHQ-9",desc:"After booking, Clinical Intake Automation administers a validated assessment, scores it, and raises a risk flag to the clinical team.",
+  clinical:{label:"Intake Accelerator · Intake · PHQ-9",desc:"After booking, Clinical Intake Automation administers a validated assessment, scores it, and raises a risk flag to the clinical team.",
     msgs:[["us","Over the last two weeks, how often have you felt down, depressed, or hopeless?"],["them","More than half the days."],["us","Thank you for sharing that. A couple more questions and you're all set."],["tag","PHQ-9 score 16 · moderately severe"],["risk","<i class="ti ti-alert-triangle"></i> Risk flag raised · clinical team notified"]]}
 };
 let current="intake",timer=null;
